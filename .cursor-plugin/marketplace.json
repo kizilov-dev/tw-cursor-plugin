@@ -1,24 +1,19 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "timeweb-mcp-server",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Timeweb Cloud",
+    "email": "info@timeweb.ru"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
-    "version": "0.1.0",
+    "description": "Timeweb Cloud MCP Server",
+    "version": "0.1.5",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "timeweb-mcp-server",
+      "source": "timeweb-mcp-server",
+      "description": "Timeweb Cloud MCP Server"
     }
   ]
 }

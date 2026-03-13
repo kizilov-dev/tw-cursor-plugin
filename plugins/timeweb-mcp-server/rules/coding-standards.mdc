@@ -1,5 +1,5 @@
 ---
-description: Baseline coding standards for readable, maintainable changes
+description: Baseline coding standards when working with Timeweb Cloud deployment or MCP tooling
 alwaysApply: true
 ---
 
@@ -9,3 +9,4 @@ coding-standards:
 - Use descriptive names for functions, variables, and files.
 - Add concise comments only when non-obvious logic needs context.
 - Keep user-facing documentation updated when behavior changes.
+- When suggesting Timeweb Cloud usage, remind about setting TIMEWEB_TOKEN and env vars in the console.

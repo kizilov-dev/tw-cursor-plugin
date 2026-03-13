@@ -1,0 +1,11 @@
+{
+  "name": "timeweb-mcp-server",
+  "displayName": "Timeweb Cloud MCP Server",
+  "author": "Timeweb Cloud",
+  "description": "Deploy apps, databases, and VCS to Timeweb Cloud from Cursor via MCP. Create apps from Git, manage presets and deploy settings, add floating IPs and VPCs.",
+  "keywords": ["timeweb", "cloud", "mcp", "deploy", "apps", "database", "vcs", "timeweb cloud", "hosting"],
+  "license": "MIT",
+  "version": "0.1.5",
+  "categories": ["Developer Tools"],
+  "logo": "assets/logo.svg"
+}

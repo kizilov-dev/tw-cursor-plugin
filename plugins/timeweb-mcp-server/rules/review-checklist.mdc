@@ -1,0 +1,13 @@
+---
+description: Checklist for changes that touch deployment, MCP config, or Timeweb Cloud usage
+alwaysApply: false
+globs:
+  - "**/*"
+---
+
+review-checklist:
+
+- Confirm new behavior has clear examples or tests where practical.
+- Flag security-sensitive code paths (tokens, env, API keys).
+- Check for breaking changes in MCP config or deploy workflows.
+- Ensure docs and migration notes are present for meaningful changes.
