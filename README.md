@@ -87,13 +87,6 @@ node scripts/validate-template.mjs
 - [x] Логотип в `plugins/timeweb-mcp-server/assets/logo.svg` и указан в манифесте плагина.
 - [x] `node scripts/validate-template.mjs` завершается успешно.
 
-## Отправка в Cursor Marketplace
-
-Когда репозиторий готов (например, на GitHub):
-
-1. Запустите `node scripts/validate-template.mjs` и исправьте ошибки, если появятся.
-2. Отправьте **ссылку на репозиторий** команде Cursor (Slack или **kniparko@anysphere.com**) для добавления плагина в маркетплейс.
-
 ## Лицензия
 
 MIT
