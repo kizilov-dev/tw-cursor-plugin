@@ -1,52 +1,52 @@
-# Timeweb Cloud MCP Server — Cursor Plugin
+# Timeweb Cloud MCP Server — плагин для Cursor
 
-Official Cursor plugin that connects the **Timeweb Cloud** MCP server so you can manage cloud infrastructure from the editor.
+Официальный плагин Cursor: подключает **Timeweb Cloud MCP Server**, чтобы управлять облачной инфраструктурой прямо из редактора.
 
-## What this plugin does
+## Что делает плагин
 
-- Adds the **Timeweb Cloud MCP Server** to Cursor with one click (no manual `mcp.json` editing).
-- Uses the npm package [`timeweb-mcp-server`](https://www.npmjs.com/package/timeweb-mcp-server); the plugin only provides the Cursor/Marketplace integration.
+- Добавляет **Timeweb Cloud MCP Server** в Cursor в один клик (без ручного редактирования `mcp.json`).
+- Использует npm-пакет [`timeweb-mcp-server`](https://www.npmjs.com/package/timeweb-mcp-server); плагин отвечает только за интеграцию с Cursor и маркетплейсом.
 
-## MCP tools included
+## Доступные MCP-инструменты
 
-| Category           | Tools                                                                                                          |
+| Категория          | Инструменты                                                                                                    |
 | ------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Apps**           | `create_timeweb_app` — create and deploy apps with auto-detected framework and settings                        |
+| **Приложения**     | `create_timeweb_app` — создание и деплой приложений с автоопределением фреймворка и настроек                   |
 | **VCS**            | `add_vcs_provider`, `get_vcs_providers`, `get_vcs_provider_repositories`, `get_vcs_provider_by_repository_url` |
-| **Config**         | `get_allowed_presets`, `get_deploy_settings`                                                                   |
-| **Infrastructure** | `create_floating_ip`, `create_vpc`                                                                             |
-| **Databases**      | `create_database`, `get_database_presets`                                                                      |
-| **Prompts**        | `create_app_prompt`, `add_vcs_provider_prompt`                                                                 |
+| **Конфигурация**   | `get_allowed_presets`, `get_deploy_settings`                                                                   |
+| **Инфраструктура** | `create_floating_ip`, `create_vpc`                                                                             |
+| **Базы данных**    | `create_database`, `get_database_presets`                                                                      |
+| **Промпты**        | `create_app_prompt`, `add_vcs_provider_prompt`                                                                 |
 
-## Setup
+## Установка и настройка
 
-1. Install the plugin from Cursor Marketplace.
-2. Get an API token from [Timeweb Cloud](https://timeweb.cloud/my/api-keys).
-3. When prompted (or in Cursor MCP settings), set `TIMEWEB_TOKEN` to your token.
-4. Restart Cursor if needed.
+1. Установите плагин из Cursor Marketplace.
+2. Получите API-токен в [Timeweb Cloud](https://timeweb.cloud/my/api-keys).
+3. При запросе (или в настройках MCP в Cursor) укажите `TIMEWEB_TOKEN` — ваш токен.
+4. При необходимости перезапустите Cursor.
 
-The plugin configures the server as:
+Плагин настраивает сервер так:
 
 - **Command:** `npx`
 - **Args:** `["timeweb-mcp-server"]`
-- **Env:** `TIMEWEB_TOKEN` (your API token)
+- **Env:** `TIMEWEB_TOKEN` (ваш API-токен)
 
-## Usage
+## Использование
 
-In Cursor chat you can say, for example:
+В чате Cursor можно написать, например:
 
-- _"Deploy my app to Timeweb Cloud"_
-- _"Create an app in Timeweb from this repo"_
-- _"Add my GitHub repo as a VCS provider in Timeweb"_
+- _«Задеплой моё приложение в Timeweb Cloud»_
+- _«Создай приложение в Timeweb из этого репо»_
+- _«Добавь мой GitHub-репозиторий как VCS-провайдер в Timeweb»_
 
-The MCP server will use your project (framework, repo) to create and deploy the app in Timeweb Cloud.
+MCP-сервер по вашему проекту (фреймворк, репозиторий) создаст и задеплоит приложение в Timeweb Cloud.
 
-## Important
+## Важно
 
-After creating an app, set environment variables in the [Timeweb Cloud console](https://timeweb.cloud); the MCP server cannot read your local `.env`.
+После создания приложения задайте переменные окружения в [панели Timeweb Cloud](https://timeweb.cloud); MCP-сервер не имеет доступа к локальному файлу `.env`.
 
-## Links
+## Ссылки
 
-- **MCP server (npm):** [timeweb-mcp-server](https://www.npmjs.com/package/timeweb-mcp-server)
-- **MCP server (source):** [github.com/timeweb-cloud/mcp-server](https://github.com/timeweb-cloud/mcp-server)
+- **MCP-сервер (npm):** [timeweb-mcp-server](https://www.npmjs.com/package/timeweb-mcp-server)
+- **MCP-сервер (исходники):** [github.com/timeweb-cloud/mcp-server](https://github.com/timeweb-cloud/mcp-server)
 - **Timeweb Cloud:** [timeweb.cloud](https://timeweb.cloud)
